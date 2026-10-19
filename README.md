@@ -1,6 +1,7 @@
 # Dakota Parker's ePortfolio
 
-## Introduction
+## Professional Self-Assessment
+
 
 ## Code Review
 [YouTube Link to Code Review](https://youtu.be/ykzfbB_Yz1Y)
@@ -115,5 +116,3 @@ One challenge was making sure that the new functionality worked with the existin
 [Original Artifact](https://github.com/DakotaParker3/cs465-fullstack/tree/module7)
 
 [Enhanced Artifact](https://github.com/DakotaParker3/cs465-fullstack/tree/update1)
-
-## Professional Self-Assessment
