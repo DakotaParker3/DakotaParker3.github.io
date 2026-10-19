@@ -6,8 +6,42 @@
 
 ## Enhancement One: Software Design and Engineering
 
+### Description
+The artifact I have selected for the first enhancement in the category of software design and engineering is my project from CS 320 Software Testing, Automation, and Quality Assurance that I created in October of 2025. The project was to develop services for managing contacts, tasks, and appointments that would then need to be thoroughly unit tested by implementing a suite of JUnit tests.
+
+### Justification
+I selected this artifact to be enhanced and included in my ePortfolio because it offered a great opportunity for me to show my ability to apply software engineering principles to an existing program. This allowed me to demonstrate my capability of improving and expanding upon an existing software solution while maintaining its original functionality.
+
+One of the primary improvements I made was refactoring and expanding the validation already present in the original application. The contact, task, and appointment model classes use validation methods to make sure that their required fields aren’t null and that values are within their specific length or format requirements. I reorganized the validation into reusable helper functions that can be called when values are created or updated. This helps keep the validation logic organized and makes the code easier to review and maintain as the same validation rules don’t have to be written in multiple places.
+
+I also implemented previously missing duplicate entry detection in each service, where new records could be added without first checking if a duplicate is already present. Now, before adding a new contact, task, or appointment, the service checks the existing entries for an already existing matching entry. This helps to prevent duplicate data from being added to the collections using conditional logic.
+
+Another major enhancement I made to the artifact was adding searching functionality. Collections in the service classes can now be searched based on relevant fields and matching objects will be returned. For example, contacts can now be searched by first name, last name, phone number, or address, and similar functionality is present for tasks and appointments as well. This required me to work with collections and iteration while designing methods that could return results without changing the original stored data.
+
+In addition to searching, I also added sorting functionality to the service classes, allowing the application to create sorted lists of contacts, tasks, or appointments based on selected fields. I used Java’s Comparator functionality that I was unaware of when working on the original project to define how objects should be ordered. This gave me additional experience using data structures and sorting techniques to organize stored information in a more useful way.
+
+While those were the primary improvements made to the artifacts, additional improvements were made as well, such as changing the contact collection from an array list to a hash map using the contact ID as its key. The task and appointment services were already using hash maps, so making the contact service consistent with them helped improve the overall design of the application. A hash map also allows contacts to be accessed using their IDs as keys rather than requiring the collection to be searched sequentially. This change let me consider how the choice of a data structure affects the way an application performs common operations.
+
+I also expanded the JUnit test coverage across the artifact. Rewriting a few existing tests and adding new tests to verify duplicate detection, searching, sorting, and the validity of update operations helped me improve even further upon the project’s greatest strength in automated testing. Testing these additional branches helped me identify areas that weren’t sufficiently covered by the original test and reinforce the importance of testing more than simply the expected behavior of an application.
+
+### Course Outcomes
+The enhancements I planned in Module One were meant to show skills in Java programming, input validation, automated testing, searching, sorting, code organization, and the abilities to improve existing code, anticipate invalid or unintended data, and show the use of programming techniques to make the services easier to use. These enhancements were also planned to align with outcomes one, four, and five, to employ strategies for building collaborative environments, demonstrate an ability to use well-founded and innovative techniques in computing practices, and to develop a security mindset.
+
+I believe I have successfully achieved each of these course outcomes accounted for in my Module One plan. The refactoring and reorganization of the artifact's code and validation in particular creates an environment where other developers can understand and maintain it more easily, allowing for more effective collaboration and supporting outcome one. The enhancement also supports outcome four, as Java collections, hash maps, Comparator, conditional logic, iteration, and JUnit are used to expand the functionality of an existing application, implementing computing solutions that deliver value. Outcome five is also supported with the enhancement. Improving validation and adding duplicate detection reduces opportunities for invalid or unexpected data to enter the application. Extensive testing also helps reinforce that functionality is working as intended and isn't easily exploitable.
+
+While not accounted for in my original Module One plan, throughout working on the enhancement I found that outcome three is also supported, which focuses on designing and evaluating computing solutions using algorithmic principles and computer science practices. Searching and sorting required me to develop logic for processing collections, while changing the contact collection from an array list to a hash map required me to consider the advantages of different data structures.
+
+### Reflection
+The process of enhancing this artifact taught me that improving an existing application requires more than simply adding new features. I had to understand how the original classes interacted and decide how functionality can be added without disrupting the original behavior of the application. Returning to an application I had worked on previously gave me the opportunity to look at my code from a different perspective and see areas that can be improved based on my greater knowledge of software development.
+
+One thing I learned was the importance of choosing an appropriate data structure for the problem at hand. When I originally worked on the project, I didn't have the same understanding of the difference between using an array list and hash map that I have now. Changing the contact collection to a hash map made me think more into how the application uses and accesses data. This reinforced the idea that data structures aren't completely interchangeable ways of storing information, but distinct design choices that affect how an application works. Additionally, adding searching and sorting functionality required me to determine how the service classes should process their collections and how the results should be returned without altering the original stored data.
+
+Another important part of the process was expanding the existing testing suite. The original project already emphasized automated testing, but putting the enhancements into place help instill that testing needs to evolve along with the software. One change that ended up being very important in the testing suite was to change the date used in testing the appointment services from a hard coded one to a dynamically generated one. This change, alongside expanding upon previously missed tests and adding tests for the new functionality I introduced to the artifact helped me drastically improve the results and coverage of the automated unit tests.
+
 ### Repository Links
-[Original Artifact](https://github.com/DakotaParker3/CS-300/tree/main)
+[Original Artifact](https://github.com/DakotaParker3/CS-320/tree/main)
+
+[Updated Artifact](https://github.com/DakotaParker3/Updated-CS-320-Artifact/tree/main)
 
 [Updated Artifact]
 
@@ -45,11 +79,38 @@ One of the most important things I learned was how recursion can be used to proc
 Another important part of the process was learning to consider what could happen when the algorithm encounters the same course more than once. Without tracking visited courses, a prerequisite that appeared through multiple paths could be added to the results more than once, which can both clutter the results and potentially lead to a circular relationship that would cause the recursive function to continue indefinitely. Adding the visitedCourses set allowed me to account for these situations by checking whether a course had already been processed before continuing the search. This helped instill the importance of considering how the algorithm should behave when the data contains unexpected relationships, as designing an algorithm involves more than making it work with just the expected input.
 
 ### Repository Links
-[Original Artifact](https://github.com/DakotaParker3/CS-320/tree/main)
+[Original Artifact](https://github.com/DakotaParker3/CS-300/tree/main)
 
-[Updated Artifact]
+[Updated Artifact](https://github.com/DakotaParker3/Updated-CS-300-Artifact/main)
 
 ## Enhancement Three: Databases
+
+### Description
+
+The artifact I have selected for the third enhancement in the databases category is my project from CS 465 Full Stack Development that I created in August of 2026. The project was to develop a full stack travel booking application that allows users to browse available trips while providing an administrative interface for managing trip information. The application uses MongoDB to store trip information, Mongoose to define and interact with the database, and an Express API to retrieve and modify data. The database contains information about each trip, including its name, ID, length, start date, resort, price, image, and description.
+
+### Justification
+I selected this artifact to be enhanced and included in my ePortfolio because it provided a great opportunity to show my ability to work with databases and improve the way an existing application retrieves and processes stored information. The original application already used MongoDB and Mongoose to store trip data and provided API endpoints for retrieving trips, as well as for adding and updating them, though the original trip listing functionality retrieved every trip from the database without a way to narrow or control the results. Enhancing this functionality let me build on the existing database integration, making it easier to search for and organize trip information.
+
+The primary improvement I made to the artifact was rewriting and expanding the tripsList function in the app_api/controllers/trips.js file. The original project used the find() method with an empty filter to retrieve all available trips. I changed this functionality to create a query filter based on optional request parameters, letting the API search for trips by name or resort. These searches use regular expressions with a case-insensitive option. This lets users find matching trips without needing to enter the exact capitalization used in the stored data, giving the application more flexibility when retrieving information.
+
+The next improvement I made to the artifact was adding sorting functionality. The enhancement allows the requested results to be sorted by approved fields, which currently include trip names, IDs, start dates, and price per person. I chose to use a list of allowed sorting fields so that the application only uses recognized fields when constructing the sort operation. The results can also be returned in either ascending or descending order. After implementing sorting functionality, the application can now request records in the desired order directly through the database query, rather than retrieving all the records and sorting them separately after they’ve been returned.
+
+Another improvement I made to the artifact was implementing pagination using the skip() and limit() methods. The controller now accepts page and limit parameters, calculating how many records should be skipped and limiting the number of trips returned for each request. I also added validation for these parameters so that invalid page numbers and page sizes fall back to their default values. The page size is capped at fifty records to prevent a request from asking for an unnecessarily large number of results. While the current database doesn’t contain very many trips, pagination provides a solid foundation for handling a larger number of trips as the application grows.
+
+An important part of implementing these enhancements was to retain the existing functionality of the application. The enhanced controller continues to return a JSON array of trip records, which preserves the response format expected by the existing frontend. The other controller functions that are responsible for retrieving a trip, adding a trip, and updating a trip were all left in place. This was important because I wanted to expand the database functionality without altering the application’s existing behavior.
+
+### Course Outcomes
+The enhancements I planned were meant to show skills in MongoDB, Mongoose, database querying, filtering, sorting, pagination, input validation, and error handling. Adding filtering, sorting, and pagination to the trip listing endpoint would expand the application’s search capabilities and give users a way to interact with the available trips that is tailored to their needs. These enhancements were planned to align with outcomes one, three, four, and five.
+
+I believe I have successfully achieved these court outcomes that were planned in the Module One assignment. The enhancement supports outcomes one and three to some degree, supporting collaborative environments and diverse audiences while designing computing solutions that solve a problem using computer science practices, as it improves the application’s usability by making trip information easier to find and organize through the use of computing skills that improve the existing application and address the limitations of retrieving all trip records at once.
+
+Outcome four, demonstrating an ability to use well-founded skills or tools to implement computer solutions that deliver value, is supported through the use of MongoDB, Mongoose, and Express to improve the database functionality of the application. I modified the Express API controller to use Mongoose queries to filter, sort, and paginate trip records stored in MongoDB, improving the API while preserving compatibility with the existing application. The enhancements also support outcome five, to develop a security mindset, as I added checks to make sure pagination parameters are positive whole numbers and limited the maximum page size to fifty trips. These safeguards, in addition to implementing default values to fall back on, help prevent invalid values from being used in database queries and prevent a request from returning an unnecessarily large number of records. I also implemented a try-catch block to handle query failures and return an HTTP status code with a JSON error message.
+
+### Reflection
+The enhancement process of this artifact helped me better understand the relationship between databases and the applications that rely on them. When I originally created the project, the main goal was to implement the full stack application’s functionality and connect the frontend to the database through an API. Revisiting the project let me consider how the existing database operations could be improved and how additional query options could make the application more usable and flexible. Before making these improvements, the API returned all available trips without a way to control or narrow the results, and the process of implementing them gave me a better understanding of how query parameters can be used to customize database queries and how Mongoose methods can retrieve specific records in an organized way.
+
+One challenge was making sure that the new functionality worked with the existing application without changing the response format expected by the frontend, which required consideration before making changes to the previous tripsList functionality. Keeping the API response as an array of trip objects let the existing frontend remain compatible with the controller. Overall, the skills I developed while working on this enhancement will help me build applications that handle data more effectively and provide users with better ways to access the information they need in the future.
 
 ### Repository Links
 [Original Artifact](https://github.com/DakotaParker3/cs465-fullstack/tree/module7)
