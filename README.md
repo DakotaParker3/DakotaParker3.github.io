@@ -1,8 +1,9 @@
-# DakotaParker3.github.io
+# Dakota Parker's ePortfolio
 
 ## Introduction
 
 ## Code Review
+[YouTube Link to Code Review](https://youtu.be/ykzfbB_Yz1Y)
 
 ## Enhancement One: Software Design and Engineering
 
@@ -42,8 +43,6 @@ Another important part of the process was expanding the existing testing suite. 
 [Original Artifact](https://github.com/DakotaParker3/CS-320/tree/main)
 
 [Updated Artifact](https://github.com/DakotaParker3/Updated-CS-320-Artifact/tree/main)
-
-[Updated Artifact]
 
 ## Enhancement Two: Algorithms and Data Structures
 
@@ -116,3 +115,5 @@ One challenge was making sure that the new functionality worked with the existin
 [Original Artifact](https://github.com/DakotaParker3/cs465-fullstack/tree/module7)
 
 [Enhanced Artifact](https://github.com/DakotaParker3/cs465-fullstack/tree/update1)
+
+## Professional Self-Assessment
